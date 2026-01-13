@@ -1,0 +1,60 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MedianFilter_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter {E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/MedianFilter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MedianFilter
+# 
+# Top level modules:
+# 	MedianFilter
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter {E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/median9.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module median9
+# 
+# Top level modules:
+# 	median9
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter {E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_MedianFilter
+# 
+# Top level modules:
+# 	tb_MedianFilter
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_MedianFilter
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_MedianFilter 
+# Loading work.tb_MedianFilter
+# Loading work.MedianFilter
+# Loading work.median9
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: ASUS TUF Dash F15  Hostname: DUNCAN  ProcessID: 8648
+# 
+#           Attempting to use alternate WLF file "./wlftd98d9n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftd98d9n
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# START: Bat dau xu ly 238220 pixel...
+# Input done. Flushing pipeline...
+# DONE! Ghi duoc 238220/238220 pixel.
+# SUCCESS: File output day du!
+# Break in Module tb_MedianFilter at E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v line 116
+# Simulation Breakpoint: Break in Module tb_MedianFilter at E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v line 116
+# MACRO ./MedianFilter_run_msim_rtl_verilog.do PAUSED at line 18

@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\HDL_ALL\LAB2\BaiTap1\MedianFilter\simulation\modelsim
+vmedian9
+I`z0k65PJ8@3o6SRHhOfh60
+V7D_E32kUH?m3<MdAZZEVa2
+Z1 dE:\HDL_ALL\LAB2\BaiTap1\MedianFilter\simulation\modelsim
+w1768228701
+8E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/median9.v
+FE:/HDL_ALL/LAB2/BaiTap1/MedianFilter/median9.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter -O0
+!i10b 1
+!s100 L^2=[Wc2QTT;S46[?hZNL1
+!s85 0
+!s108 1768324791.943000
+!s107 E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/median9.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter|E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/median9.v|
+!s101 -O0
+vMedianFilter
+IIAm>biJnzn:io;Ro9ZFb80
+VeR`9HXzmJ=>bGFaS]bjjP1
+R1
+w1768324126
+8E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/MedianFilter.v
+FE:/HDL_ALL/LAB2/BaiTap1/MedianFilter/MedianFilter.v
+L0 1
+R2
+r1
+31
+R3
+n@median@filter
+R4
+!i10b 1
+!s100 [^zIf6]k@BbWokWFYlXM;2
+!s85 0
+!s108 1768324791.868000
+!s107 E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/MedianFilter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter|E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/MedianFilter.v|
+!s101 -O0
+vtb_MedianFilter
+!i10b 1
+!s100 eC2gGRi[JObcRGY0JL81E3
+ISCJ6BIg1?TWE:<>oe@`OY3
+Vmj[[^98W9zK>6O^[]=>hY0
+R1
+w1768324602
+8E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v
+FE:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1768324791.997000
+!s107 E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB2/BaiTap1/MedianFilter|E:/HDL_ALL/LAB2/BaiTap1/MedianFilter/tb_MedianFilter.v|
+!s101 -O0
+R3
+R4
+ntb_@median@filter
