@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\HDL_ALL\LAB2\BaiTap2\ConvertRGBToGray\simulation\modelsim
+vConvertRGB
+IS63CUGUK`c0f1OiiLh0<F3
+V9LM1G^z7S0JiBHO8hd__V0
+Z1 dE:\HDL_ALL\LAB2\BaiTap2\ConvertRGBToGray\simulation\modelsim
+w1768328329
+8E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/ConvertRGB.v
+FE:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/ConvertRGB.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@convert@r@g@b
+!i10b 1
+!s100 FDODiC93SQ7::jHRkGY[D0
+!s85 0
+!s108 1768329301.072000
+!s107 E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/ConvertRGB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray|E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/ConvertRGB.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray -O0
+vtb_ConvertRGB
+!i10b 1
+!s100 zBUkH1jCmXF86Pdf<]9k;1
+IR<RQB6XHo`PO:Bc8MRWkV2
+V3c8U;C2gb_^keOH9@Z=JS3
+R1
+w1768329292
+8E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v
+FE:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1768329301.137000
+!s107 E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray|E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v|
+!s101 -O0
+R3
+R4
+ntb_@convert@r@g@b

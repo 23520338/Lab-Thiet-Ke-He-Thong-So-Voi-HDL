@@ -1,0 +1,51 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ConvertRGB_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray {E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/ConvertRGB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ConvertRGB
+# 
+# Top level modules:
+# 	ConvertRGB
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray {E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_ConvertRGB
+# 
+# Top level modules:
+# 	tb_ConvertRGB
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_ConvertRGB
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_ConvertRGB 
+# Loading work.tb_ConvertRGB
+# Loading work.ConvertRGB
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# --- BAT DAU XU LY     2795520 PIXEL ---
+# -> Da xu ly: 0%
+# -> Da xu ly: 10%
+# -> Da xu ly: 20%
+# -> Da xu ly: 30%
+# -> Da xu ly: 40%
+# -> Da xu ly: 50%
+# -> Da xu ly: 60%
+# -> Da xu ly: 70%
+# -> Da xu ly: 80%
+# -> Da xu ly: 90%
+# --- HOAN THANH! ---
+# ** Note: $finish    : E:/HDL_ALL/LAB2/BaiTap2/ConvertRGBToGray/tb_ConvertRGB.v(81)
+#    Time: 27955216 ns  Iteration: 0  Instance: /tb_ConvertRGB

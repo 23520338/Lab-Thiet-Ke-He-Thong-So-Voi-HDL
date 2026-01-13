@@ -1,0 +1,40 @@
+module rgb2gray (
+    input [7:0] r,
+    input [7:0] g,
+    input [7:0] b,
+    input [7:0] brightness, // Tham số chỉnh độ sáng
+    output reg [7:0] gray_out
+);
+
+    // Khai báo biến trung gian lớn hơn để chứa kết quả nhân
+    // R(8bit) * 77(7bit) -> cần khoảng 15-16 bit
+    reg [15:0] mult_r;
+    reg [15:0] mult_g;
+    reg [15:0] mult_b;
+    reg [15:0] sum_gray;
+    reg [15:0] gray_bright;
+
+    always @(*) begin
+        // 1. Thực hiện nhân các hệ số (Dùng số nguyên thay vì số thực)
+        // 0.299 * 256 ~= 77
+        // 0.587 * 256 ~= 150
+        // 0.114 * 256 ~= 29
+        mult_r = r * 77;
+        mult_g = g * 150;
+        mult_b = b * 29;
+
+        // 2. Cộng tổng và dịch bit (chia cho 256)
+        sum_gray = (mult_r + mult_g + mult_b) >> 8;
+
+        // 3. Xử lý độ sáng (Brightness)
+        gray_bright = sum_gray + brightness;
+
+        // 4. Clamping (Chống tràn số)
+        // Nếu kết quả > 255 thì giữ ở 255, ngược lại lấy giá trị tính được
+        if (gray_bright > 255) 
+            gray_out = 8'd255;
+        else 
+            gray_out = gray_bright[7:0];
+    end
+
+endmodule

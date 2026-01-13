@@ -1,0 +1,51 @@
+`timescale 1ns/1ps
+
+module tb_rgb2gray;
+    reg [7:0] r, g, b;
+    reg [7:0] brightness;
+    wire [7:0] gray_out;
+    
+    // Mảng nhớ để lưu dữ liệu ảnh input
+    // Giả sử ảnh 100x100 = 10000 pixels. 24 bit mỗi pixel.
+    reg [23:0] img_data [0:9999]; 
+    integer i;
+    integer out_file;
+
+    // Gọi module xử lý
+    rgb2gray uut (
+        .r(r), 
+        .g(g), 
+        .b(b), 
+        .brightness(brightness), 
+        .gray_out(gray_out)
+    );
+
+    initial begin
+        // 1. Đọc file hex vào mảng nhớ
+        $readmemh("image_in.hex", img_data);
+        
+        // Mở file để ghi kết quả
+        out_file = $fopen("image_out.hex", "w");
+        
+        // Cài đặt độ sáng (Ví dụ: tăng sáng thêm 20 đơn vị)
+        brightness = 8'd20; 
+
+        // 2. Duyệt qua từng pixel để xử lý
+        // Lưu ý: For loop ở đây nằm trong Testbench (mô phỏng phần mềm) nên được phép dùng.
+        // Trong module phần cứng (rgb2gray) chúng ta KHÔNG dùng for loop để quét ảnh.
+        for (i = 0; i < 10000; i = i + 1) begin
+            // Tách 24 bit hex thành R, G, B
+            r = img_data[i][23:16];
+            g = img_data[i][15:8];
+            b = img_data[i][7:0];
+            
+            #10; // Đợi 1 chút để mạch tính toán (trong thực tế sẽ dùng clock)
+            
+            // Ghi kết quả xuống file output
+            $fwrite(out_file, "%2h\n", gray_out);
+        end
+        
+        $fclose(out_file);
+        $finish;
+    end
+endmodule

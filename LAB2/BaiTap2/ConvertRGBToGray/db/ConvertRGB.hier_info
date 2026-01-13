@@ -1,0 +1,43 @@
+|ConvertRGB
+r[0] => Mult0.IN14
+r[1] => Mult0.IN13
+r[2] => Mult0.IN12
+r[3] => Mult0.IN11
+r[4] => Mult0.IN10
+r[5] => Mult0.IN9
+r[6] => Mult0.IN8
+r[7] => Mult0.IN7
+g[0] => Mult1.IN15
+g[1] => Mult1.IN14
+g[2] => Mult1.IN13
+g[3] => Mult1.IN12
+g[4] => Mult1.IN11
+g[5] => Mult1.IN10
+g[6] => Mult1.IN9
+g[7] => Mult1.IN8
+b[0] => Mult2.IN12
+b[1] => Mult2.IN11
+b[2] => Mult2.IN10
+b[3] => Mult2.IN9
+b[4] => Mult2.IN8
+b[5] => Mult2.IN7
+b[6] => Mult2.IN6
+b[7] => Mult2.IN5
+level[0] => Add2.IN8
+level[0] => Add3.IN3
+level[1] => Add2.IN7
+level[1] => Add3.IN2
+level[2] => Add2.IN5
+level[2] => Add2.IN6
+level[3] => Add2.IN3
+level[3] => Add2.IN4
+gray_out[0] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[1] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[2] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[3] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[4] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[5] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[6] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+gray_out[7] <= gray_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
