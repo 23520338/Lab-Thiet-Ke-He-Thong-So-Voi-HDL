@@ -1,0 +1,95 @@
+`timescale 1ns/1ps
+
+module tb_lab1;
+
+    reg  [3:0] in;
+    reg  [2:0] cnt;
+    reg        load_en;
+    reg        clk;
+    reg        rst;
+    wire [3:0] out;
+
+    //==============================
+    // DUT
+    //==============================
+    lab1 dut (
+        .in(in),
+        .cnt(cnt),
+        .load_en(load_en),
+        .clk(clk),
+        .rst(rst),
+        .out(out)
+    );
+
+    //==============================
+    // CLOCK: 10ns
+    //==============================
+    always #5 clk = ~clk;
+
+    //==============================
+    // TEST
+    //==============================
+    initial begin
+        // init
+        clk     = 0;
+        rst     = 0;
+        load_en = 0;
+        in      = 0;
+        cnt     = 0;
+
+        // reset
+        #10;
+        rst = 1;
+
+        //----------------------------------
+        // Test 1: load_en = 1
+        // in = 3, cnt = 2
+        // expect: find state6 -> next state4 -> out = 0
+        //----------------------------------
+        #10;
+        load_en = 1;
+        in  = 4'd3;
+        cnt = 3'd2;
+
+        #10;
+        load_en = 0;
+
+        //----------------------------------
+        // Run FSM normally
+        //----------------------------------
+        repeat (6) begin
+            #10;
+        end
+
+        //----------------------------------
+        // Test 2: in = 2, cnt = 0
+        //----------------------------------
+        #10;
+        load_en = 1;
+        in  = 4'd2;
+        cnt = 3'd0;
+
+        #10;
+        load_en = 0;
+
+        repeat (6) begin
+            #10;
+        end
+
+        //----------------------------------
+        // Finish
+        //----------------------------------
+        #20;
+        $finish;
+    end
+
+    //==============================
+    // MONITOR
+    //==============================
+    initial begin
+        $display(" time | rst load_en in cnt | state | out");
+        $monitor("%4t |  %b     %b     %d   %d  |   %d   |  %d",
+                 $time, rst, load_en, in, cnt, dut.state, out);
+    end
+
+endmodule

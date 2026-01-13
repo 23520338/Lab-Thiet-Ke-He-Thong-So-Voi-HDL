@@ -1,0 +1,135 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do lab1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 {E:/HDL_ALL/LAB1/lab1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab1
+# 
+# Top level modules:
+# 	lab1
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 {E:/HDL_ALL/LAB1/clk_div_1hz.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_div_1hz
+# 
+# Top level modules:
+# 	clk_div_1hz
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 {E:/HDL_ALL/LAB1/seg7_decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg7_decoder
+# 
+# Top level modules:
+# 	seg7_decoder
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 {E:/HDL_ALL/LAB1/top_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_module
+# 
+# Top level modules:
+# 	top_module
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1/output_files {E:/HDL_ALL/LAB1/output_files/final.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module final
+# 
+# Top level modules:
+# 	final
+# 
+# vlog -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 {E:/HDL_ALL/LAB1/tb_lab1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_lab1
+# 
+# Top level modules:
+# 	tb_lab1
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_lab1
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_lab1 
+# Loading work.tb_lab1
+# Loading work.lab1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  time | rst load in cnt | state | out
+#    0 |  0    0    0   0  |   0   |   2
+# 10000 |  1    1    2   0  |   0   |   2
+# 20000 |  1    0    2   0  |   0   |   2
+# 25000 |  1    0    2   0  |   6   |   3
+# 35000 |  1    0    2   0  |   4   |   0
+# 40000 |  1    1    2   1  |   4   |   0
+# 45000 |  1    1    2   1  |   3   |   2
+# 50000 |  1    0    2   1  |   3   |   2
+# 55000 |  1    0    2   1  |   0   |   2
+# 65000 |  1    0    2   1  |   6   |   3
+# 70000 |  1    1    3   0  |   6   |   3
+# 75000 |  1    1    3   0  |   1   |   3
+# 80000 |  1    0    3   0  |   1   |   3
+# 85000 |  1    0    3   0  |   6   |   3
+# 95000 |  1    0    3   0  |   4   |   0
+# 100000 |  1    1    3   1  |   4   |   0
+# 105000 |  1    1    3   1  |   5   |   3
+# 110000 |  1    0    3   1  |   5   |   3
+# 115000 |  1    0    3   1  |   2   |   5
+# 125000 |  1    0    3   1  |   7   |   8
+# 130000 |  1    1    3   2  |   7   |   8
+# 135000 |  1    1    3   2  |   6   |   3
+# 140000 |  1    0    3   2  |   6   |   3
+# 145000 |  1    0    3   2  |   4   |   0
+# 155000 |  1    0    3   2  |   7   |   8
+# 160000 |  1    1    5   0  |   7   |   8
+# 165000 |  1    1    5   0  |   2   |   5
+# 170000 |  1    0    5   0  |   2   |   5
+# 175000 |  1    0    5   0  |   7   |   8
+# 185000 |  1    0    5   0  |   3   |   2
+# 190000 |  1    1    0   0  |   3   |   2
+# 195000 |  1    1    0   0  |   4   |   0
+# 200000 |  1    0    0   0  |   4   |   0
+# 205000 |  1    0    0   0  |   7   |   8
+# 215000 |  1    0    0   0  |   3   |   2
+# 220000 |  1    1    8   0  |   3   |   2
+# 225000 |  1    1    8   0  |   7   |   8
+# 230000 |  1    0    8   0  |   7   |   8
+# 235000 |  1    0    8   0  |   3   |   2
+# 245000 |  1    0    8   0  |   0   |   2
+# 250000 |  1    1    4   0  |   0   |   2
+# 260000 |  1    0    4   0  |   0   |   2
+# 265000 |  1    0    4   0  |   6   |   3
+# 275000 |  1    0    4   0  |   4   |   0
+# 280000 |  1    1    4   1  |   4   |   0
+# 285000 |  1    1    4   1  |   0   |   2
+# 290000 |  1    0    4   1  |   0   |   2
+# 295000 |  1    0    4   1  |   6   |   3
+# 305000 |  1    0    4   1  |   4   |   0
+# 310000 |  1    1    5   1  |   4   |   0
+# 315000 |  1    1    5   1  |   2   |   5
+# 320000 |  1    0    5   1  |   2   |   5
+# 325000 |  1    0    5   1  |   7   |   8
+# 335000 |  1    0    5   1  |   3   |   2
+# 345000 |  1    0    5   1  |   0   |   2
+# 355000 |  1    0    5   1  |   6   |   3
+# 365000 |  1    0    5   1  |   4   |   0
+# 375000 |  1    0    5   1  |   7   |   8
+# 385000 |  1    0    5   1  |   3   |   2
+# 395000 |  1    0    5   1  |   0   |   2
+# 405000 |  1    0    5   1  |   6   |   3
+# 415000 |  1    0    5   1  |   4   |   0
+# 425000 |  1    0    5   1  |   7   |   8
+# === END OF TEST ===
+# 435000 |  1    0    5   1  |   3   |   2
+# 445000 |  1    0    5   1  |   0   |   2
+# ** Note: $finish    : E:/HDL_ALL/LAB1/tb_lab1.v(125)
+#    Time: 450 ns  Iteration: 0  Instance: /tb_lab1
+# 1
+# Break in Module tb_lab1 at E:/HDL_ALL/LAB1/tb_lab1.v line 125
+# Simulation Breakpoint: 1
+# Break in Module tb_lab1 at E:/HDL_ALL/LAB1/tb_lab1.v line 125
+# MACRO ./lab1_run_msim_rtl_verilog.do PAUSED at line 21

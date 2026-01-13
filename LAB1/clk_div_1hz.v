@@ -1,0 +1,17 @@
+module clk_div_1hz (clk_50m, rst_n, clk_1hz);
+    input  wire clk_50m;
+    input  wire rst_n;
+    output reg  clk_1hz;
+
+    reg [25:0] cnt;
+
+    always @(posedge clk_50m or negedge rst_n) begin
+        if (!rst_n)
+            {cnt, clk_1hz} <= 27'd0;
+        else if (cnt == 26'd24_999_999)
+            {cnt, clk_1hz} <= {26'd0, ~clk_1hz};
+        else
+            cnt <= cnt + 1'b1;
+    end
+
+endmodule

@@ -1,0 +1,37 @@
+module top (
+    input        CLOCK_50,
+    input        KEY0,          // reset active low
+    input        SW_LOAD,
+    input  [3:0] SW_IN,         // in
+    input  [2:0] SW_CNT,        // cnt
+
+    output [6:0] HEX0
+);
+
+    wire clk_1hz;
+    wire [3:0] out_lab1;
+
+    // Clock divider
+    clk_div_1hz u_clk (
+        .clk_50m (CLOCK_50),
+        .rst_n   (KEY0),
+        .clk_1hz (clk_1hz)
+    );
+
+    // FSM lab1 (GIỮ NGUYÊN)
+    lab1 u_lab1 (
+        .in      (SW_IN),
+        .cnt     (SW_CNT),
+        .load_en (SW_LOAD),
+        .clk     (clk_1hz),
+        .rst     (KEY0),
+        .out     (out_lab1)
+    );
+
+    // Hiển thị ra LED 7 đoạn
+    seg7_decoder u_hex (
+        .bin (out_lab1),
+        .seg (HEX0)
+    );
+
+endmodule

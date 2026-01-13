@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\HDL_ALL\LAB1\simulation\modelsim
+vclk_div_1hz
+Icn@CC45gzBNTYm0[BKoSC3
+Vb7IYNBWH0lnjZ@jBEICkK3
+Z1 dE:\HDL_ALL\LAB1\simulation\modelsim
+w1767682007
+8E:/HDL_ALL/LAB1/clk_div_1hz.v
+FE:/HDL_ALL/LAB1/clk_div_1hz.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1 -O0
+!i10b 1
+!s100 za0Mg7fi<ZIb^^B]AH^We1
+!s85 0
+!s108 1768314785.725000
+!s107 E:/HDL_ALL/LAB1/clk_div_1hz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1|E:/HDL_ALL/LAB1/clk_div_1hz.v|
+!s101 -O0
+vfinal
+In^]n1Ll6DQVX6ER2KbgeW0
+V32jzWb2ePYETkKnRYbfh61
+R1
+w1767685827
+8E:/HDL_ALL/LAB1/output_files/final.v
+FE:/HDL_ALL/LAB1/output_files/final.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 d67gW2`6ZPM2:Gc4CcUWn3
+!s85 0
+!s108 1768314786.140000
+!s107 E:/HDL_ALL/LAB1/output_files/final.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1/output_files|E:/HDL_ALL/LAB1/output_files/final.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/HDL_ALL/LAB1/output_files -O0
+vlab1
+I@TEDZ2697BnJi?JV:06=V2
+VeI=]`DH_^=DfIAEVM5Xbo3
+R1
+w1768280565
+8E:/HDL_ALL/LAB1/lab1.v
+FE:/HDL_ALL/LAB1/lab1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 LIFnLfKb1cMJoTzg<FlaU1
+!s85 0
+!s108 1768314785.548000
+!s107 E:/HDL_ALL/LAB1/lab1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1|E:/HDL_ALL/LAB1/lab1.v|
+!s101 -O0
+vseg7_decoder
+IBR4Z0nMIe1mSA:i;9mjid2
+V`zNHVO7PZ:lQ`d@lIcoGG3
+R1
+w1767682184
+8E:/HDL_ALL/LAB1/seg7_decoder.v
+FE:/HDL_ALL/LAB1/seg7_decoder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 KlQ23^4OUgS37TB8a[kgi1
+!s85 0
+!s108 1768314785.867000
+!s107 E:/HDL_ALL/LAB1/seg7_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1|E:/HDL_ALL/LAB1/seg7_decoder.v|
+!s101 -O0
+vtb_lab1
+!i10b 1
+!s100 fbkdkn9SMmCDNTlZ1IP0B2
+Ik4eZa^IX4K>]4H;W8:d;02
+VjA=kHW64Og@OAiOG4@?K81
+R1
+w1767681983
+8E:/HDL_ALL/LAB1/tb_lab1.v
+FE:/HDL_ALL/LAB1/tb_lab1.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1768314786.288000
+!s107 E:/HDL_ALL/LAB1/tb_lab1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1|E:/HDL_ALL/LAB1/tb_lab1.v|
+!s101 -O0
+R3
+R4
+vtop_module
+IH^63;kz5i5hJl6_ER=6>a0
+VaZ8:7lb5MjB6878MHUPXB0
+R1
+w1768205715
+8E:/HDL_ALL/LAB1/top_module.v
+FE:/HDL_ALL/LAB1/top_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 [4d<=zmhf:GzO8>b6AZIS2
+!s85 0
+!s108 1768314786.004000
+!s107 E:/HDL_ALL/LAB1/top_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/HDL_ALL/LAB1|E:/HDL_ALL/LAB1/top_module.v|
+!s101 -O0
